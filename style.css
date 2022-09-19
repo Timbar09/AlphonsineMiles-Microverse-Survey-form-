@@ -17,6 +17,8 @@ html {
 
   --fz-sm: 0.875rem;
   --fz-med: 1.25rem;
+
+  --radius: 5px;
 }
 
 body {
@@ -79,26 +81,20 @@ p {
 
 .form {
   background-color: var(--darkblue);
-  border-radius: 3px;
+  border-radius: var(--radius);
+  padding: 2.5rem;
 }
-label,
-input,
-select,
-option,
-textarea {
+
+.input {
   font-size: var(--fz-sm);
   display: block;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 1rem;
   border: none;
 }
 
 @media (min-width: 620px) {
-  label,
-  input,
-  select,
-  option,
-  textarea {
+  .input {
     font-size: var(--fz-med);
   }
 }
