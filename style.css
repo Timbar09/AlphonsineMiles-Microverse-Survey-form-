@@ -12,7 +12,6 @@ html {
 :root {
   --white: #f3f3f3;
   --darkblue: #1b1b32;
-  --darkblue-alpha: rgba(27, 27, 50, 0.8);
   --green: #37af65;
 
   --fz-sm: 0.875rem;
@@ -82,11 +81,12 @@ p {
 .form {
   background-color: var(--darkblue);
   border-radius: var(--radius);
-  padding: 2.5rem;
+  padding: 1rem 2.5rem 2.5rem;
 }
 
 .input {
   font-size: var(--fz-sm);
+  font-family: inherit;
   display: block;
   width: 100%;
   margin-top: 1rem;
