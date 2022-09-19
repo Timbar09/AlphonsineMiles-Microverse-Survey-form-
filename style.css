@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --white: #f3f3f3;
+  --darkblue: #1b1b32;
+  --darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --green: #37af65;
+
+  --fz-sm: 0.875rem;
+  --fz-med: 1.25rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: var(--white);
+  font-size: var(--fz-sm);
+  line-height: 1.4;
+  background: url('/images/survey-form-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 620px) {
+  body {
+    font-size: var(--fz-med);
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)
+  );
+  height: 100vh;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.container {
+  margin: 3.125rem auto 0;
+  max-width: 45rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.6875rem;
+  font-weight: 300;
+}
+
+@media (min-width: 620px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.form {
+  background-color: var(--darkblue);
+  border-radius: 3px;
+}
