@@ -15,7 +15,47 @@
           Thank you for taking the time to help us improve the platform
         </p>
       </header>
-      <form action="" id="survey-form"></form>
+      <form action="" id="survey-form">
+       <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          class="textbox"
+          id="name"
+          placeholder="Enter your name"
+        />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          class="textbox"
+          id="email"
+          placeholder="Enter your email address"
+        />
+
+        <label for="number" id="number-label">Age (Optional)</label>
+        <input
+          type="number"
+          class="textbox"
+          min="5"
+          max="150"
+          id="number"
+          placeholder="Enter your age"
+        />
+
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select name="dropdown" class="textbox" id="dropdown">
+          <option disabled selected>select current role</option>
+          <option value="Student">Student</option>
+          <option value="Fulltime">Full time student</option>
+          <option value="Job">Full time job</option>
+          <option value="Begginer">Begginer</option>
+          <option value="None">None</option>
+        </select>
+      </form>
+      
+
     </div>
   </body>
 </html>
