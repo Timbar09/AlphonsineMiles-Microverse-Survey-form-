@@ -81,3 +81,33 @@ p {
   background-color: var(--darkblue);
   border-radius: 3px;
 }
+label,
+input,
+select,
+option,
+textarea {
+  font-size: var(--fz-sm);
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+}
+
+@media (min-width: 620px) {
+  label,
+  input,
+  select,
+  option,
+  textarea {
+    font-size: var(--fz-med);
+  }
+}
+
+label {
+  margin-top: 25px;
+}
+
+.textbox {
+  padding: 10px 15px;
+  border-radius: var(--radius);
+}
