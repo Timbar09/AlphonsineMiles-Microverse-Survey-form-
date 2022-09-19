@@ -107,3 +107,24 @@ label {
   padding: 10px 15px;
   border-radius: var(--radius);
 }
+#textarea {
+  max-height: 135px;
+  min-height: 135px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: var(--radius);
+  padding: 10px 15px;
+}
+
+#submit {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+}
+
+#submit:hover {
+  opacity: 0.8;
+}
